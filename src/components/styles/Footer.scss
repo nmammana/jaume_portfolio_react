@@ -1,0 +1,127 @@
+/***** FONTS *****/
+/***   Poppins: font-family:'Poppins', sans-serif; ***/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/***   Oxygen: font-family: 'Oxygen', sans-serif;   ***/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+/*** Source Sans Pro: font-family: 'Source Sans Pro', sans-serif; ***/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+$purple: #310A90;
+$turquoise: #42E2B8;
+$white: #FFFFFF;
+
+$gradient:  radial-gradient(41.48% 11.48% at 2.38% 8.52%, #8E74E9 0%, rgba(255, 255, 255, 0) 100%), 
+            linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+
+.flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import "fonts";
+@import "buttons";
+@import "icons";
+@import "title";
+
+footer{
+    .text_container{
+        margin: 1.5em 0;
+        .goodbye{
+            margin: 0;
+            text-align: center;
+            color: #FFFFFF;
+            gap: 0.25em;
+            img{
+                width: 1.5em;
+            }
+            .to_hide{
+                display: none;
+            }
+        }
+        .copyright{
+            margin: 0;
+            margin-top: 0.5em;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+    .logo{
+        color: $white;
+        padding: 0 1em;
+        display: none;
+    }
+}
+
+
+@media (min-width:820px){
+    html{
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1000px){
+    body{
+        max-width: 900px;
+    }   
+}
+
+@media (min-width: 1300px){
+    html{
+        font-size: 24px;
+    }
+    body{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    footer{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        align-items: center;
+        .icons{
+            grid-column: 10/13;
+            grid-row: 1;
+        }
+        .text_container{
+            grid-column: 4/10;
+            grid-row: 1;
+            .goodbye{
+                /*Tamaño del diseño, yo lo haria mas grande*/
+                font-size: 0.66em;
+                .to_hide{
+                    display: block;
+                }
+            }
+            .copyright{
+                font-size: 0.66em;
+                display: none;
+            }
+        }
+        .logo{
+            display: block;
+            grid-column: 1/4;
+            grid-row: 1;
+        }
+    }
+}
+
+@media (min-width: 1600px){
+    html{
+        font-size: 28px;
+    }
+    footer{
+        .text_container{
+            .goodbye{
+                .to_hide{
+                    display: none;
+                }
+            }
+            .copyright{
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+$border-gradient: radial-gradient(83.14% 78.52% at -12.32% -18.69%, 
+                                rgba(255, 255, 255, 0.75) 0%, 
+                                rgba(255, 255, 255, 0) 100%);
+
+$purple: #310A90;
+
+.client_comments{
+    background: rgba(255, 255, 255, 0.2);
+    margin: 2.5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    /*backdrop-filter: blur(39.7657px);*/ 
+    border-radius: 1.5em;
+    border: 4px solid transparent;
+
+    /*Hace el borde pero sin curvas en las esquinas*/
+    /*border-image: $border-gradient 1 stretch;*/   
+    .comment{
+        margin: 1.5em 0;
+        color: $purple;
+    }
+    .client{
+        margin: 0;
+        color: $purple;
+    }
+}
+
+@media (min-width:1300px){
+    .client_comments{
+        padding: 3.33em;
+        .comment{
+            font: $heading6;
+            text-align: center;
+            font-weight: bold;
+        }
+        .client{
+            font: $heading5;
+            text-align: center;
+            opacity: 0.5;
+        }
+    }
+}
+
+ 

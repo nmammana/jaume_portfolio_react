@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*No se usa*/
+/*No se usa. Sería para titulos grandes en desktop*/
+.headline1 {
+  font: normal bold 95px/154px "Poppins", sans-serif;
+  letter-spacing: -0.015em;
+}
+
+.headline2 {
+  font: normal bold 59px/95px "Poppins", sans-serif;
+  letter-spacing: -0.005em;
+}
+
+.headline3 {
+  font: normal bold 3rem/4.875rem "Poppins", sans-serif;
+}
+
+.headline4 {
+  font: normal bold 34px/55px "Poppins", sans-serif;
+}
+
+.headline5 {
+  font: normal bold 1.5rem/2.4rem "Poppins", sans-serif;
+}
+
+.body1 {
+  font: normal normal 1rem/1.6rem "Poppins", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.body2 {
+  font: normal normal 14px/23px "Poppins", sans-serif;
+  letter-spacing: 0.0025em;
+}
+
+.button_font {
+  font: normal bold 0.875rem/1.4375rem "Poppins", sans-serif;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.caption_font {
+  font: normal normal 12px/19px "Poppins", sans-serif;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.comments_font {
+  font: normal bold 16px/26px "Oxygen", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.logo_font {
+  font: normal 900 1rem/1.625rem "Poppins", sans-serif;
+}
+
+/*@media(min-width:1300px){
+    .button_font{
+        font-size: 22px;
+        line-height: 31px;
+    }
+}*/
+@media (min-width: 1300px) {
+  .body1 {
+    font-size: 0.8rem;
+    line-height: 1.17rem;
+  }
+}
+
+.client_comments {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 2.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em;
+  /*backdrop-filter: blur(39.7657px);*/
+  border-radius: 1.5em;
+  border: 4px solid transparent;
+  /*Hace el borde pero sin curvas en las esquinas*/
+  /*border-image: $border-gradient 1 stretch;*/
+}
+
+.client_comments .comment {
+  margin: 1.5em 0;
+  color: #310A90;
+}
+
+.client_comments .client {
+  margin: 0;
+  color: #310A90;
+}
+
+@media (min-width: 1300px) {
+  .client_comments {
+    padding: 3.33em;
+  }
+  .client_comments .comment {
+    font: normal 700 1.42rem/2.3rem "Oxygen", sans-serif;
+    text-align: center;
+    font-weight: bold;
+  }
+  .client_comments .client {
+    font: normal bold 1.5rem/2.4rem "Poppins", sans-serif;
+    text-align: center;
+    opacity: 0.5;
+  }
+}
+/*# sourceMappingURL=CommentsCard.css.map */
