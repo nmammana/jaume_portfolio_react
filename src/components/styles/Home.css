@@ -18,13 +18,6 @@
           justify-content: center;
 }
 
-.required:after {
-  content: " *";
-  font: normal 600 1rem/1.6rem 'Source Sans Pro', sans-serif;
-  color: #DA1414;
-  /*opacity: 0.8;*/
-}
-
 /*No se usa*/
 /*No se usa. Sería para titulos grandes en desktop*/
 .headline1 {
@@ -230,34 +223,6 @@ main {
   padding-top: 4.5em;
 }
 
-main .presentation .presentation_picture {
-  padding: 1em 0;
-}
-
-main .presentation .presentation_picture img {
-  width: 20.5em;
-}
-
-main .presentation .presentation_text h2 {
-  margin: 0;
-  color: #310A90;
-}
-
-main .presentation .presentation_text h1 {
-  margin: 0;
-  color: #310A90;
-}
-
-main .presentation .presentation_text p {
-  margin: 1em 0;
-  color: #310A90;
-}
-
-main .presentation .presentation_text .descargar_cv {
-  width: 100%;
-  max-width: 400px;
-}
-
 main .intro {
   padding: 2.5em 0;
 }
@@ -285,54 +250,8 @@ main .intro .arrow_container img {
   position: absolute;
 }
 
-main .contact {
-  padding: 5em 0;
-}
-
-main .contact .invitation {
-  margin: 1.5em 0;
-  color: #FFFFFF;
-}
-
-main .contact form .form_label {
-  font-weight: bold;
-  padding: 0 1em;
-  color: #310A90;
-}
-
-main .contact form .input_field {
-  background: #FFFFFF;
-  border: 1px solid #858C94;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 8px;
-  width: 100%;
-  max-height: 50px;
-  padding: 0.75em 1em;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-}
-
-main .contact form .message_input {
-  min-height: 134px;
-}
-
-main .contact form .button_enviar {
-  width: 100%;
-}
-
-@media (max-width: 360px) {
-  main .presentation .presentation_picture img {
-    width: 90%;
-  }
-}
-
 @media (min-width: 620px) {
   body {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  header .nav_bar {
     max-width: 600px;
     margin: 0 auto;
   }
@@ -345,19 +264,11 @@ main .contact form .button_enviar {
   body {
     max-width: 800px;
   }
-  header .nav_bar {
-    max-width: 800px;
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: 1000px) {
   body {
     max-width: 900px;
-  }
-  header .nav_bar {
-    max-width: 900px;
-    margin: 0 auto;
   }
 }
 
@@ -370,68 +281,8 @@ main .contact form .button_enviar {
     margin: 0 auto;
     padding: 0;
   }
-  header {
-    padding: 1.2em 0;
-    padding-bottom: 0.2em;
-  }
-  header .nav_bar {
-    max-width: 1200px;
-    max-height: 40px;
-    margin: 0 auto;
-  }
-  header .nav_bar .curriculum {
-    display: none;
-  }
-  header .nav_bar .top_nav {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 2.85em;
-  }
-  header .nav_bar .top_nav li a {
-    text-decoration: none;
-  }
-  header .nav_bar .top_nav .proyectos {
-    color: #FFFFFF;
-  }
-  header .nav_bar .top_nav .hablemos {
-    color: #FFFFFF;
-  }
   main {
     padding-top: 4.5em;
-  }
-  main .presentation {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
-    grid-row-gap: 2.75em;
-  }
-  main .presentation .presentation_picture {
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 5;
-    grid-column: 8/13;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1/3;
-  }
-  main .presentation .presentation_picture img {
-    width: 100%;
-  }
-  main .presentation .presentation_text {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1/7;
-    -ms-grid-row: 2;
-    grid-row: 2;
-  }
-  main .presentation .presentation_text .descargar_cv {
-    max-width: 18em;
   }
   main .intro {
     max-width: 900px;
@@ -441,18 +292,6 @@ main .contact form .button_enviar {
   main .intro .intro__message {
     font: normal 700 1.42rem/2.3rem "Oxygen", sans-serif;
   }
-  main .contact {
-    max-width: 620px;
-    margin: 0 auto;
-  }
-  main .contact .title_contact {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
-  main .contact .invitation {
-    text-align: center;
-  }
 }
 
 @media (min-width: 1600px) {
@@ -460,4 +299,4 @@ main .contact form .button_enviar {
     font-size: 28px;
   }
 }
-/*# sourceMappingURL=Layout.css.map */
+/*# sourceMappingURL=Home.css.map */

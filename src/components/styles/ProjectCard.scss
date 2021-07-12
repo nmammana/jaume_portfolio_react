@@ -6,7 +6,7 @@ $purple: #310A90;
 
 
 @import "fonts";
-.projects{
+.projectFull{
     .project{
         padding: 2.5em 0;
         padding-bottom: 0;
@@ -17,7 +17,7 @@ $purple: #310A90;
             }
         }  
         .project_presentation{
-            padding: 2.5em 0;
+            padding: 2.5em 1em;
             .description{
                 margin: 2em 0;
                 color: $purple;
@@ -84,7 +84,7 @@ $purple: #310A90;
 }
 
 @media (min-width:620px){
-    .projects{
+    .projectFull{
         .project{
             .project_presentation{
                 .project_buttons{
@@ -99,14 +99,14 @@ $purple: #310A90;
 
 
 @media (min-width:1000px){
-    .projects{
+    .projectFull{
         .project{
             display: grid;
             grid-template-columns: repeat(12,1fr);
             align-items: center;
             .project_pic{
                 img{
-                    width: 100%;
+                    width: 90%;
                 }
             } 
             
@@ -165,7 +165,7 @@ $purple: #310A90;
 
 
 @media (min-width:1300px){
-    .projects{
+    .projectFull{
         .client_comments{
             padding: 3.33em;
             .comment{

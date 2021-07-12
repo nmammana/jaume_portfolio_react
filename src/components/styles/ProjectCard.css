@@ -68,7 +68,7 @@
   }
 }
 
-.projects {
+.projectFull {
   /*.pokemon{
         
     }
@@ -88,25 +88,25 @@
     }*/
 }
 
-.projects .project {
+.projectFull .project {
   padding: 2.5em 0;
   padding-bottom: 0;
 }
 
-.projects .project .project_pic img {
+.projectFull .project .project_pic img {
   width: 20.5em;
 }
 
-.projects .project .project_presentation {
-  padding: 2.5em 0;
+.projectFull .project .project_presentation {
+  padding: 2.5em 1em;
 }
 
-.projects .project .project_presentation .description {
+.projectFull .project .project_presentation .description {
   margin: 2em 0;
   color: #310A90;
 }
 
-.projects .project .project_presentation .project_buttons {
+.projectFull .project .project_presentation .project_buttons {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,7 +118,7 @@
   gap: 1em;
 }
 
-.projects .client_comments {
+.projectFull .client_comments {
   background: rgba(255, 255, 255, 0.2);
   margin: 2.5em 0;
   display: -webkit-box;
@@ -142,12 +142,12 @@
   /*border-image: $border-gradient 1 stretch;*/
 }
 
-.projects .client_comments .comment {
+.projectFull .client_comments .comment {
   margin: 1.5em 0;
   color: #310A90;
 }
 
-.projects .client_comments .client {
+.projectFull .client_comments .client {
   margin: 0;
   color: #310A90;
 }
@@ -159,13 +159,13 @@
 }
 
 @media (min-width: 620px) {
-  .projects .project .project_presentation .project_buttons button {
+  .projectFull .project .project_presentation .project_buttons button {
     width: 60%;
   }
 }
 
 @media (min-width: 1000px) {
-  .projects {
+  .projectFull {
     /*.netnet{
             .project_pic{
                 grid-column: 7/13;
@@ -180,7 +180,7 @@
             }
         }*/
   }
-  .projects .project {
+  .projectFull .project {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[12];
@@ -189,10 +189,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .projects .project .project_pic img {
-    width: 100%;
+  .projectFull .project .project_pic img {
+    width: 90%;
   }
-  .projects .project .project_presentation .project_buttons {
+  .projectFull .project .project_presentation .project_buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -203,31 +203,31 @@
     /*Por ser reverse (not sure)*/
     gap: 1em;
   }
-  .projects .project .project_presentation .project_buttons button {
+  .projectFull .project .project_presentation .project_buttons button {
     padding: 13px 24px;
   }
-  .projects .project .project_pic {
+  .projectFull .project .project_pic {
     -ms-grid-column: 6;
     -ms-grid-column-span: 7;
     grid-column: 6/13;
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .projects .project .project_presentation {
+  .projectFull .project .project_presentation {
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-column: 1/6;
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .projects .imageFirst .project_pic {
+  .projectFull .imageFirst .project_pic {
     -ms-grid-column: 1;
     -ms-grid-column-span: 7;
     grid-column: 1/8;
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .projects .imageFirst .project_presentation {
+  .projectFull .imageFirst .project_presentation {
     -ms-grid-column: 8;
     -ms-grid-column-span: 5;
     grid-column: 8/13;
@@ -237,15 +237,15 @@
 }
 
 @media (min-width: 1300px) {
-  .projects .client_comments {
+  .projectFull .client_comments {
     padding: 3.33em;
   }
-  .projects .client_comments .comment {
+  .projectFull .client_comments .comment {
     font: normal 700 1.42rem/2.3rem "Oxygen", sans-serif;
     text-align: center;
     font-weight: bold;
   }
-  .projects .client_comments .client {
+  .projectFull .client_comments .client {
     font: normal bold 1.5rem/2.4rem "Poppins", sans-serif;
     text-align: center;
     opacity: 0.5;

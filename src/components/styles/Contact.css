@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/***** FONTS *****/
+/***   Poppins: font-family:'Poppins', sans-serif; ***/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/***   Oxygen: font-family: 'Oxygen', sans-serif;   ***/
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+/*** Source Sans Pro: font-family: 'Source Sans Pro', sans-serif; ***/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+.flex_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.required:after {
+  content: " *";
+  font: normal 600 1rem/1.6rem 'Source Sans Pro', sans-serif;
+  color: #DA1414;
+  /*opacity: 0.8;*/
+}
+
+/*No se usa*/
+/*No se usa. Sería para titulos grandes en desktop*/
+.headline1 {
+  font: normal bold 95px/154px "Poppins", sans-serif;
+  letter-spacing: -0.015em;
+}
+
+.headline2 {
+  font: normal bold 59px/95px "Poppins", sans-serif;
+  letter-spacing: -0.005em;
+}
+
+.headline3 {
+  font: normal bold 3rem/4.875rem "Poppins", sans-serif;
+}
+
+.headline4 {
+  font: normal bold 34px/55px "Poppins", sans-serif;
+}
+
+.headline5 {
+  font: normal bold 1.5rem/2.4rem "Poppins", sans-serif;
+}
+
+.body1 {
+  font: normal normal 1rem/1.6rem "Poppins", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.body2 {
+  font: normal normal 14px/23px "Poppins", sans-serif;
+  letter-spacing: 0.0025em;
+}
+
+.button_font {
+  font: normal bold 0.875rem/1.4375rem "Poppins", sans-serif;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.caption_font {
+  font: normal normal 12px/19px "Poppins", sans-serif;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.comments_font {
+  font: normal bold 16px/26px "Oxygen", sans-serif;
+  letter-spacing: 0.005em;
+}
+
+.logo_font {
+  font: normal 900 1rem/1.625rem "Poppins", sans-serif;
+}
+
+/*@media(min-width:1300px){
+    .button_font{
+        font-size: 22px;
+        line-height: 31px;
+    }
+}*/
+@media (min-width: 1300px) {
+  .body1 {
+    font-size: 0.8rem;
+    line-height: 1.17rem;
+  }
+}
+
+.button_primary {
+  border: 2px solid #310A90;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  background: #310A90;
+  color: #FFFFFF;
+  min-height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button_secondary {
+  border: 2px solid #310A90;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  min-height: 49px;
+  background: transparent;
+  color: #310A90;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title {
+  background: #310A90;
+  -webkit-box-shadow: -4px 4px 0px #FFFFFF;
+          box-shadow: -4px 4px 0px #FFFFFF;
+  color: #FFFFFF;
+  padding: 0.33em;
+}
+
+main .contact {
+  padding: 5em 0;
+}
+
+main .contact .invitation {
+  margin: 1.5em 0;
+  color: #FFFFFF;
+}
+
+main .contact form .form_label {
+  font-weight: bold;
+  padding: 0 1em;
+  color: #310A90;
+}
+
+main .contact form .input_field {
+  background: #FFFFFF;
+  border: 1px solid #858C94;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  max-height: 50px;
+  padding: 0.75em 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+main .contact form .message_input {
+  min-height: 134px;
+}
+
+main .contact form .button_enviar {
+  width: 100%;
+}
+
+@media (min-width: 1300px) {
+  main .contact {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  main .contact .title_contact {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  main .contact .invitation {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */
