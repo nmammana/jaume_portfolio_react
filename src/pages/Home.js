@@ -30,7 +30,8 @@ export default function Home() {
         "profileImg": leonidasPic,
         "comment": '"Jaume ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses".',
         "client": 'LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM',
-        "imageFirst": "false"
+        "imageFirst": false,
+        "imgSize": '90%'
     },{
         "id": 2,
         "projectImg": marvolPic,
@@ -41,7 +42,8 @@ export default function Home() {
         "profileImg": jasonPic,
         "comment": '"Jaume ha superado mis expectativas desde el diseño hasta el desarrollo"',
         "client": 'JASON LOPEZ / COFUNDADOR Y CEO MARVOL',
-        "imageFirst": "true"
+        "imageFirst": true,
+        "imgSize": '90%'
     },{
         "id": 3,
         "projectImg": netnetPic,
@@ -52,7 +54,8 @@ export default function Home() {
         "profileImg": marcoPic,
         "comment": '"Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos"',
         "client": 'MARCO CORTEZ / NETNET',
-        "imageFirst": "false"
+        "imageFirst": false,
+        "imgSize": '60%'
     }])
 
     return (

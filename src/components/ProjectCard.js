@@ -5,9 +5,16 @@ import './styles/ProjectCard.css';
 
 
 export default function ProjectCard(props) {
-    const {projectImg, title, description, buttonFirst, buttonSecond, profileImg, comment, client, imageFirst} = props;
+    const {projectImg, title, description, buttonFirst, buttonSecond, profileImg, comment, client, imageFirst, imgSize} = props;
 
-    useEffect(()=>{        
+    
+    var projectClassName = imageFirst ? "project imageFirst" : "project";
+    
+    /*var img = document.getElementById('projectImg');
+    img.style["width"] = {imgSize}*/
+    //var imgWidth = `width: ${props.imgSize}`;
+    
+    /*useEffect(()=>{        
         var projectPic = document.getElementsByClassName('project_pic');
         var projectPresentation = document.getElementsByClassName('project_presentation');
         var projectImg = document.getElementsByClassName('projectImg');
@@ -18,12 +25,15 @@ export default function ProjectCard(props) {
         projectPresentation[1].style['grid-row'] = '1';
         
         projectImg[2].style['width'] = '15em';
-    })
 
+        `project ${props.imageRight && 'image-right'}
+    })*/
+
+    console.log(imageFirst);
     return (
         <div className = "projectFull">
-            <section className="project" id = "project">
-                <div className="project_pic flex_center"><img className="projectImg" id="projectImg" src={projectImg} alt=""></img></div>
+            <section className={projectClassName} id = "project">
+                <div className="project_pic flex_center"><img className="projectImg" id="projectImg" src={projectImg} alt="" width={imgSize} ></img></div>
                 <div className="project_presentation">
                     <span className="title headline5">{title}</span>
                     <p id="description" className="description body1">{description}</p>

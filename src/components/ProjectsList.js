@@ -19,6 +19,7 @@ export default function ProjectsList({projects}) {
                             comment={project.comment}
                             client={project.client}
                             imageFirst={project.imageFirst}
+                            imgSize={project.imgSize}
                         />
                     )
                 })
