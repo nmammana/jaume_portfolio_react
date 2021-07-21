@@ -1,63 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import Layout from '../components/Layout'
-
+import Presentation from '../components/Presentation'
 import ProjectsList from '../components/ProjectsList'
 import Contact from '../components/Contact'
 
 /***** Styles *****/
-import '../components/styles/Home.css'
+import '../styles/Home.scss'
 
 /***** Images *****/
-import arrowDown from '../images/arrow-down.png'
-import pokemonPic from '../images/img.png'
-import leonidasPic from '../images/leonidas.png'
-import marvolPic from '../images/📱 iPad.png'
-import jasonPic from '../images/jason.png'
-import netnetPic from '../images/📱 Iphone X.png'
-import marcoPic from '../images/marco.png'
-import Presentation from '../components/Presentation'
+import arrowDown from '../assets/images/arrow-down.png'
 
 
 export default function Home() {
-    const[projects, setProjects] = useState([{
-        "id": 1,
-        "projectImg": pokemonPic,
-        "title": 'leonidasesteban.com',
-        "description": 'Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.',
-        "buttonFirst": 'VER CóDIGO',
-        "buttonSecond": 'VER PROYECTO',
-        "profileImg": leonidasPic,
-        "comment": '"Jaume ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses".',
-        "client": 'LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM',
-        "imageFirst": false,
-        "imgSize": '90%'
-    },{
-        "id": 2,
-        "projectImg": marvolPic,
-        "title": 'MARVOL',
-        "description": 'Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.',
-        "buttonFirst": 'VER CóDIGO',
-        "buttonSecond": 'VER PROYECTO',
-        "profileImg": jasonPic,
-        "comment": '"Jaume ha superado mis expectativas desde el diseño hasta el desarrollo"',
-        "client": 'JASON LOPEZ / COFUNDADOR Y CEO MARVOL',
-        "imageFirst": true,
-        "imgSize": '90%'
-    },{
-        "id": 3,
-        "projectImg": netnetPic,
-        "title": 'NETNET',
-        "description": 'Películas y series ilimitadas y mucho más. Disfruta donde quieras. Cancela cuando quieras.',
-        "buttonFirst": 'VER CóDIGO',
-        "buttonSecond": 'VER PROYECTO',
-        "profileImg": marcoPic,
-        "comment": '"Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos"',
-        "client": 'MARCO CORTEZ / NETNET',
-        "imageFirst": false,
-        "imgSize": '60%'
-    }])
-
+    
     return (
         <Layout>
             <main>
@@ -69,9 +25,7 @@ export default function Home() {
                     <div className="arrow_container flex_center "><img className="slidein" src={arrowDown} alt="arrow_down"></img></div>
                 </section>
 
-                <ProjectsList
-                    projects = {projects}
-                />
+                <ProjectsList/>
                 <Contact/>
             </main>
         </Layout>              

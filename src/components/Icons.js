@@ -1,12 +1,13 @@
 import React from 'react'
 
 /*import './styles/portfolio.css'*/
+import '../styles/icons.scss'
 
 /***** Images *****/
-import iconPhone from '../images/icon-phone.png'
-import iconMail from '../images/icon-mail.png'
-import iconIg from '../images/icon-instagram.png'
-import iconTw from '../images/icon-twitter.png'
+import iconPhone from '../assets/images/icon-phone.png'
+import iconMail from '../assets/images/icon-mail.png'
+import iconIg from '../assets/images/icon-instagram.png'
+import iconTw from '../assets/images/icon-twitter.png'
 
 export default function Icons() {
     return (

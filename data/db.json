@@ -1,0 +1,39 @@
+{
+    "data": [{
+        "id": 1,
+        "projectImg": "img.png",
+        "title": "leonidasesteban.com",
+        "description": "Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.",
+        "buttonFirst": "VER CóDIGO",
+        "buttonSecond": "VER PROYECTO",
+        "profileImg": "leonidas.png",
+        "comment": "\"Jaume ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses\".",
+        "client": "'EONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM",
+        "imageFirst": false,
+        "imgSize": "90%"
+    },{
+        "id": 2,
+        "projectImg": "📱 iPad.png",
+        "title": "MARVOL",
+        "description": "Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.",
+        "buttonFirst": "VER CóDIGO",
+        "buttonSecond": "VER PROYECTO",
+        "profileImg": "jason.png",
+        "comment": "\"Jaume ha superado mis expectativas desde el diseño hasta el desarrollo\".",
+        "client": "JASON LOPEZ / COFUNDADOR Y CEO MARVOL",
+        "imageFirst": true,
+        "imgSize": "90%"
+    },{
+        "id": 3,
+        "projectImg": "📱 Iphone X.png",
+        "title": "NETNET",
+        "description": "Películas y series ilimitadas y mucho más. Disfruta donde quieras. Cancela cuando quieras.",
+        "buttonFirst": "VER CóDIGO",
+        "buttonSecond": "VER PROYECTO",
+        "profileImg": "/marco.png",
+        "comment": "\"Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos\".",
+        "client": "MARCO CORTEZ / NETNET",
+        "imageFirst": false,
+        "imgSize": "60%"
+    }]
+}

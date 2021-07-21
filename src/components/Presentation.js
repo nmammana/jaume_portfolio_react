@@ -2,10 +2,10 @@ import React from 'react'
 
 import Icons from './Icons';
 
-import './styles/Presentation.css';
+import '../styles/Presentation.scss';
 
 /***** Images *****/
-import user from '../images/user.png'
+import user from '../assets/images/user.png'
 
 export default function Presentation() {
     return (

@@ -20,69 +20,43 @@ $gradient:  radial-gradient(41.48% 11.48% at 2.38% 8.52%, #8E74E9 0%, rgba(255, 
     justify-content: center;
 }
 
-
 @import "fonts";
 @import "buttons";
-@import "icons";
 @import "title";
-/*@import "comments";*/
-@import "slidein";
 
-html{
-    font-size: 16px;
-    scroll-behavior: smooth;
-}
-
-body{ 
-    background: $gradient;
-    background-attachment: fixed;
-    /*backdrop-filter: blur(40px);*/
-    padding: 0 1em;
-}
-
-
-main{
-    padding-top: 4.5em;
-    .intro{
-        padding: 2.5em 0;
-        .intro__message{
+footer{
+    .text_container{
+        margin: 1.5em 0;
+        .goodbye{
             margin: 0;
             text-align: center;
-            letter-spacing: 0.005em;
-            font-weight: normal;
-            color: $purple;
-        }
-        .intro__projects{
-            margin: 1em 0;
-            text-align: center;
-            color: $purple;
-        }
-        .arrow_container{
-            height: 6.5em;
-            position: relative;
+            color: #FFFFFF;
+            gap: 0.25em;
             img{
-                position: absolute;
-
+                width: 1.5em;
+            }
+            .to_hide{
+                display: none;
             }
         }
+        .copyright{
+            margin: 0;
+            margin-top: 0.5em;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+    .logo{
+        color: $white;
+        padding: 0 1em;
+        display: none;
     }
 }
 
-
-
-@media (min-width:620px){
-    body{
-        max-width: 600px;
-        margin: 0 auto;
-    }
-}
 
 @media (min-width:820px){
     html{
         font-size: 18px;
-    }
-    body{
-        max-width: 800px;
     }
 }
 
@@ -101,22 +75,52 @@ main{
         margin: 0 auto;
         padding: 0;
     }
-    main{
-        padding-top: 4.5em;
-        .intro{
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 8.4em 0 3em;
-            .intro__message{
-                font: $heading6;
+    
+    footer{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        align-items: center;
+        .icons{
+            grid-column: 10/13;
+            grid-row: 1;
+        }
+        .text_container{
+            grid-column: 4/10;
+            grid-row: 1;
+            .goodbye{
+                /*Tamaño del diseño, yo lo haria mas grande*/
+                font-size: 0.66em;
+                .to_hide{
+                    display: block;
+                }
+            }
+            .copyright{
+                font-size: 0.66em;
+                display: none;
             }
         }
+        .logo{
+            display: block;
+            grid-column: 1/4;
+            grid-row: 1;
+        }
     }
-    
 }
 
 @media (min-width: 1600px){
     html{
         font-size: 28px;
+    }
+    footer{
+        .text_container{
+            .goodbye{
+                .to_hide{
+                    display: none;
+                }
+            }
+            .copyright{
+                display: block;
+            }
+        }
     }
 }
